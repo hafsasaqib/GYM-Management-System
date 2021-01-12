@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitnessclub">
+
+    <application
+        android:name="com.example.fitnessclub.offlineApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/fitness_logo"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Reservation.ReservationInfo"/>
+        <activity android:name=".Transection.TransectionInfo">
+        </activity>
+        <activity android:name=".Schedule.ViewSchedule"></activity>
+        <activity android:name=".AttendedSession.AttendedSessions" />
+        <activity android:name=".Trainer.ManageTrainer" />
+        <activity android:name=".Trainee.ManageTrainee" />
+        <activity android:name=".Reservation.CancelReservation" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".LogIn" />
+        <activity android:name=".Reservation.MakeReservation" />
+        <activity android:name=".Trainer.BookTrainer" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".Trainer.AddTrainer" />
+        <activity android:name=".Trainee.AddTrainee" />
+        <activity android:name=".Trainee.TraineeLog" />
+        <activity android:name=".AdminLog" />
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

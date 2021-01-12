@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/top"
+        >
+        <LinearLayout
+            android:weightSum="8"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:src="@drawable/fitness_logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+
+            </ImageView>
+
+            <TextView
+                android:background="#AD9614"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:text="FeedBack"
+                android:textStyle="bold"
+                android:textColor="#FFFF"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:background="#AD9614"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_below="@+id/top"
+        android:background="@drawable/round_corners"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/round_message"
+            android:hint="    Name"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#FFFF"
+            android:textColorHint="#FFFF"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/name"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#FFFF"
+            android:textColorHint="#FFFF"
+            android:hint="    Type Message...."
+            android:layout_below="@+id/name"
+            android:background= "@drawable/round_message"
+            android:id="@+id/message"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textSize="24dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="@drawable/round_button_feedback"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:id="@+id/submit"
+            android:textColor="@android:color/white"
+            />
+    </RelativeLayout>
+</RelativeLayout>

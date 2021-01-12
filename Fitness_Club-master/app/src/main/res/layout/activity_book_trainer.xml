@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    >
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/top"
+        >
+        <LinearLayout
+            android:weightSum="8"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:src="@drawable/fitness_logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+
+            </ImageView>
+
+            <TextView
+                android:background="#AD9614"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:text="Book Trainer"
+                android:textStyle="bold"
+                android:textColor="#FFFF"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:background="#AD9614"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_below="@id/top"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_corners">
+
+        <Button
+            android:id="@+id/book"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ExcerciseTypeSpinner"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_button"
+            android:text="Book"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/trainerSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/round_text"
+            android:drawableLeft="@drawable/ic_user_profile"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff"
+            android:prompt="@string/trainer_prompt" />
+
+        <Spinner
+            android:id="@+id/timeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/trainerSpinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:drawableLeft="@drawable/ic_time"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_text"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:hint="  Select Timeslot"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:entries="@array/time_array"
+            android:prompt="@string/time_prompt"/>
+
+        <Spinner
+
+            android:id="@+id/ExcerciseTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/timeSpinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:drawableLeft="@drawable/ic_time"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_text"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:hint="  Excercise Type"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:entries="@array/excercise_type_array"
+            android:prompt="@string/execrcise_type_prompt"
+                />
+
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>

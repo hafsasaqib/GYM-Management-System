@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Fitness Club</string>
+
+    <string-array name="Name">
+        <item>Usama Zafar</item>
+        <item>Usama Rasheed</item>
+        <item>Hafsa Saqib</item>
+        <item>Anas Zafar</item>
+    </string-array>
+
+    <string name="time_prompt">Choose a timeslot</string>
+    <string name="execrcise_type_prompt">Choose excercise type</string>
+    <string name="membership_type_prompt">Choose membership type</string>
+    <string name="trainer_prompt">Select a trainer</string>
+
+    <string-array name="time_array">
+        <item>Choose a timeslot</item>
+        <item>01:00-02:00 pm</item>
+        <item>02:00-03:00 pm</item>
+        <item>03:00-04:00 pm</item>
+        <item>04:00-05:00 pm</item>
+        <item>05:00-06:00 pm</item>
+        <item>06:00-07:00 pm</item>
+        <item>07:00-08:00 pm</item>
+        <item>08:00-09:00 pm</item>
+        <item>09:00-10:00 pm</item>
+        <item>10:00-11:00 pm</item>
+        <item>11:00-12:00 pm</item>
+    </string-array>
+    <string-array name="excercise_type_array">
+        <item>Choose Excercise type</item>
+        <item>Cardio-Squates-Lunges</item>
+        <item>Squates-Lunges-Pushups</item>
+        <item>Crunches-Cardio-Lunges</item>
+        <item>Pushups-Walking-Cardio</item>
+        <item>Bent-Over Row-Squates-Crunches</item>
+    </string-array>
+
+    <string-array name="membership_type_array">
+        <item>Choose membership type</item>
+        <item>Gold</item>
+        <item>Silver</item>
+        <item>Bronze</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:padding="20dp"
+            android:src="@drawable/fitness_logo">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="LOGIN TO STAY FIT"
+            android:textColor="#FFFF"
+            android:textSize="24dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_user_profile"
+            android:hint="  Email"
+            android:textColor="#FFFF"
+            android:textColorHint="#FFFF"
+            android:textSize="24dp"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_door_key"
+            android:hint="  Password"
+            android:inputType="textPassword"
+            android:textColorHint="#FFFF"
+            android:textColor="#FFFF"
+            android:textSize="24dp"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:gravity="end|center_vertical"
+            android:layoutDirection="rtl"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:text="Remeber Me?"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"
+            android:buttonTint="#FFFF"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:id="@+id/login_admin"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textColor="#FFFF"
+            android:layout_width="match_parent"
+            android:textStyle="italic|bold"
+            android:layout_height="0dp"></TextView>
+
+<!--        <LinearLayout-->
+<!--            android:layout_weight="1"-->
+<!--            android:weightSum="2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/login_admin"-->
+<!--                android:textColor="#FFFF"-->
+<!--                android:textSize="20dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:text="As Admin"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/login_trainee"-->
+<!--                android:textColor="#FFFF"-->
+<!--                android:textSize="20dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:text="As Trainee"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"/>-->
+
+
+<!--        </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="SIGN UP"
+            android:textColor="#E3B52E"
+            android:layout_width="match_parent"
+            android:textStyle="italic|bold"
+            android:layout_height="0dp"></TextView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

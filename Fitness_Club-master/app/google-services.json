@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "550617226340",
+    "firebase_url": "https://fitnessclub-f74fe.firebaseio.com",
+    "project_id": "fitnessclub-f74fe",
+    "storage_bucket": "fitnessclub-f74fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550617226340:android:048c6e286aa71b54639371",
+        "android_client_info": {
+          "package_name": "com.example.fitnessclub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550617226340-jo67o4r60aiss912af9oatefumbf12ia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByszBzkC8Hb5qqkV3vcWEtkndA_8YppAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550617226340-jo67o4r60aiss912af9oatefumbf12ia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

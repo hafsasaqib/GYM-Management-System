@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1">
+
+    <RelativeLayout
+        android:id="@+id/upperBox"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="ADD TRAINER"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/upperBox"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_corners"
+        >
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_no"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_button"
+            android:text="Add"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/round_text"
+            android:drawableLeft="@drawable/ic_user_profile"
+            android:paddingLeft="20dp"
+            android:hint="  Name"
+            android:textColorHint="#ffff"
+            android:textColor="#FFFF"
+            android:textSize="16dp" />
+
+        <EditText
+
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_text"
+            android:paddingLeft="20dp"
+            android:hint="  Email"
+            android:textColorHint="#FFFF"
+            android:textColor="#FFFF"
+            android:textSize="16dp" />
+
+        <EditText
+
+            android:id="@+id/phone_no"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:drawableLeft="@drawable/ic_phone_contact"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_text"
+            android:paddingLeft="20dp"
+            android:hint="  Phone No"
+            android:textColorHint="#FFFF"
+            android:textColor="#FFFF"
+            android:textSize="16dp" />
+
+<!--        <Spinner-->
+
+<!--            android:id="@+id/timeSpinner"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_below="@+id/phone_no"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginHorizontal="20dp"-->
+<!--            android:drawableLeft="@drawable/ic_time"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:layout_marginRight="50dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/round_text"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:textColorHint="#FFFF"-->
+<!--            android:textColor="#FFFF"-->
+<!--            android:textSize="24dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:entries="@array/time_array"-->
+<!--            android:prompt="@string/time_prompt" />-->
+
+<!--        <Spinner-->
+
+<!--            android:id="@+id/ExcerciseTypeSpinner"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_below="@+id/timeSpinner"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginHorizontal="20dp"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:layout_marginRight="50dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/round_text"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:textColor="#FFFF"-->
+<!--            android:textSize="24dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:entries="@array/excercise_type_array"-->
+<!--            android:prompt="@string/execrcise_type_prompt"/>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <ImageView
+
+            android:src="@drawable/fitness_logo"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"></ImageView>
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profilePhoto"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/round_camera"
+        android:elevation="20dp"
+        android:padding="12dp"
+        android:src="@drawable/ic_female_avatar_image" />
+</RelativeLayout>
